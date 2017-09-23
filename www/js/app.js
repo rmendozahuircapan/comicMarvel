@@ -22,7 +22,7 @@
   
   app.controller('MarvelCtrl',function($scope,$http){
     $scope.comics = [];
-    $http.get('https://gateway.marvel.com/v1/public/comics?ts=1&apikey=e5bd84c9380ca1e45730934dcbaf2bdb&hash=b983eec0e264f8544553c9a58cb42d43')
+    $http.get('http://gateway.marvel.com/v1/public/comics?ts=1&apikey=e5bd84c9380ca1e45730934dcbaf2bdb&hash=b983eec0e264f8544553c9a58cb42d43')
           .success(function(comics){
             angular.forEach(comics.data.results,function(comic){
               $scope.comics.push(comic);
