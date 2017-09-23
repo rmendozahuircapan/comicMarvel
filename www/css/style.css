@@ -1,0 +1,23 @@
+h2.comic-title{
+    white-space: normal;
+}
+.responsive{
+    width: 100%;
+    height: auto;
+}
+
+p.description{
+    text-align: justify;
+}
+
+.link-footer{
+    text-decoration: none;
+    color: white;
+}
+
+.bar-footer{
+    background-color: black;
+}
+.bar-header{
+    background-color: white;  
+}

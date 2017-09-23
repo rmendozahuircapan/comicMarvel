@@ -1,0 +1,16 @@
+<ion-view view-title="MARVEL'S COMICS">
+    <ion-content>
+        <div class="bar item-input-inset bar-light">
+            <label class="item-input-wrapper">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" ng-model="searchbar" placeholder="Search">
+            </label>
+        </div>    
+        <div class="list">
+            <a href="/#/detail/{{ comic.id }}" class="item item-thumbnail-left" ng-repeat="comic in comics | filter: searchbar">
+                <img ng-src="{{ comic.thumbnail.path }}.{{ comic.thumbnail.extension }}">  
+                <h2 class="comic-title">{{ comic.title }}</h2>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

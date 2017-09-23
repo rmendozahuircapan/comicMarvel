@@ -1,0 +1,11 @@
+<div ng-controller="DetailCtrl">
+    <ion-view view-title="COMIC" >
+        <ion-content>
+            <img class="responsive" ng-src="{{ comic.thumbnail.path }}.{{ comic.thumbnail.extension }}">
+            <p><b> {{ comic.title | uppercase}} </b></p>
+            <p></p>
+            <p class="description">{{ comic.description }}</p>
+            <p><b>Format: </b>{{ comic.format }}</p>
+        </ion-content>
+    </ion-view>
+</div>
